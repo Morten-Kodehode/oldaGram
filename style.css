@@ -9,54 +9,86 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 375px) {
-  /* Header */
-  .container {
-    height: 100vh;
-    border: 5px solid black;
-    border-radius: 15px;
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 15px 15px 15px;
-    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  }
+/* Header */
+.container {
+  max-width: 375px;
+  border: 5px solid black;
+  border-radius: 15px;
+}
 
-  .header__title {
-    font-family: "Ms Madi", cursive;
-    font-size: 3rem;
-  }
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
-  .header__image,
-  .postHead__image {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
-  }
+.header__title {
+  font-family: "Ms Madi", cursive;
+  font-size: 3rem;
+}
 
-  /* Post */
-  .post {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-  }
+.header__image,
+.postHead__image {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 
-  .post__head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 15px;
-  }
+/* Post */
+.post {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
 
-  .postHead__userName {
-    font-size: 1.25rem;
-  }
+.post__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+}
 
-  .postHead__userLocation {
-    font-weight: bold;
-  }
+.postHead__userName {
+  font-size: 1.25rem;
+}
+
+.postHead__userLocation {
+  font-weight: bold;
+}
+
+.post__image {
+  margin: 15px 0;
+  height: 300px;
+}
+
+.post__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 15px 25px 15px;
+}
+
+.post__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.comments__userName {
+  font-weight: bold;
+  margin-right: 0.8em;
+  font-size: 0.9rem;
+}
+
+.post__comments {
+  font-size: 0.8rem;
 }
