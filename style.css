@@ -92,3 +92,7 @@ body {
 .post__comments {
   font-size: 0.8rem;
 }
+
+.fa-heart:hover {
+  color: red;
+}
