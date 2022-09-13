@@ -38,11 +38,17 @@
         />
         <div class="post__footer">
           <div class="post__icons">
-            <div><i class="fa-regular fa-heart fa-xl"></i></div>
+            <div>
+              <i
+                class="fa-regular fa-heart fa-xl"
+                id="like"
+                onclick="addLike()"
+              ></i>
+            </div>
             <div><i class="fa-regular fa-comment fa-xl"></i></div>
             <div><i class="fa-regular fa-paper-plane fa-xl"></i></div>
           </div>
-          <p class="post__likes" id="postLikes">500 Likes</p>
+          <p class="post__likes"><span id="likeNr">0</span> Likes</p>
           <p class="post__comments">
             <span class="comments__userName">Comment Man</span>Lorem ipsum dolor
             sit amet consectetur.
